@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Welcome to our home &middot; Mellanvågsgatan 5</title>
+<meta name="description" content="Guest guide for our house in Järnbrott, Gothenburg: practical information, house rules, transport, shopping and local favourites." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+<script>
+if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  document.documentElement.className+=' js';
+}
+</script>
+<style>
+:root{
+  --paper:#F0EDE4;
+  --card:#FBFAF6;
+  --ink:#1C2B2A;
+  --ink-soft:#4E5C58;
+  --petrol:#175E58;
+  --petrol-pale:#DDE8E4;
+  --mustard:#B4791A;
+  --brick:#9E3F2B;
+  --rule:#D8D3C4;
+  --display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  --wrap:64rem;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:5.5rem;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:1.0625rem;
+  line-height:1.65;
+  font-optical-sizing:auto;
+}
+img{max-width:100%;display:block}
+a{color:var(--petrol);text-underline-offset:.18em;text-decoration-thickness:.06em}
+a:hover{color:var(--ink)}
+:focus-visible{outline:3px solid var(--mustard);outline-offset:3px;border-radius:2px}
+
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:1.25rem}
+
+/* ---------- Header ---------- */
+.masthead{
+  position:sticky;top:0;z-index:60;
+  background:rgba(240,237,228,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule);
+}
+.masthead__bar{
+  display:flex;align-items:center;gap:1rem;
+  min-height:3.75rem;
+}
+.wordmark{
+  font-family:var(--display);font-weight:700;font-size:1rem;
+  letter-spacing:-.01em;color:var(--ink);text-decoration:none;
+  white-space:nowrap;
+}
+.wordmark span{display:block;font-weight:500;font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.masthead__right{margin-left:auto;display:flex;align-items:center;gap:.5rem}
+.translate-note{font-family:var(--display);font-size:.625rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
+.sitenav{
+  border-top:1px solid var(--rule);
+  overflow-x:auto;
+  scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;
+}
+.sitenav::-webkit-scrollbar{display:none}
+.sitenav ul{
+  display:flex;gap:.375rem;list-style:none;margin:0;
+  padding:.5rem 1.25rem;
+  width:max-content;min-width:100%;
+}
+.sitenav a{
+  display:block;
+  font-family:var(--display);font-size:.8125rem;font-weight:500;
+  letter-spacing:.02em;
+  padding:.3125rem .6875rem;border-radius:999px;
+  color:var(--ink-soft);text-decoration:none;white-space:nowrap;
+  transition:background-color .15s ease,color .15s ease;
+}
+.sitenav a:hover,.sitenav a.is-active{background:var(--petrol);color:var(--card)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;isolation:isolate}
+.hero__img{width:100%;height:min(62vh,30rem);object-fit:cover}
+.hero__plate{
+  position:relative;
+  margin:-5rem auto 0;
+  max-width:40rem;
+  background:var(--card);
+  border:1px solid var(--rule);
+  border-top:5px solid var(--petrol);
+  padding:2rem 1.5rem 1.75rem;
+  text-align:center;
+  box-shadow:0 18px 40px -28px rgba(28,43,42,.6);
+}
+.hero__eyebrow{
+  font-family:var(--display);font-size:.6875rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--mustard);
+  margin:0 0 .875rem;
+}
+.hero h1{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(2rem,7vw,3.25rem);
+  line-height:1.02;
+  letter-spacing:-.025em;
+  margin:0 0 .875rem;
+}
+.hero p{margin:0 auto;max-width:32rem;color:var(--ink-soft);font-size:1.0625rem}
+
+/* ---------- Key facts plaques ---------- */
+.plaques{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));
+  gap:1px;
+  background:var(--rule);
+  border:1px solid var(--rule);
+  margin-top:2.5rem;
+}
+.plaque{background:var(--card);padding:1rem 1.125rem}
+.plaque dt{
+  font-family:var(--display);font-size:.625rem;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);
+  margin-bottom:.25rem;
+}
+.plaque dd{
+  margin:0;font-family:var(--display);font-weight:600;
+  font-size:1.0625rem;line-height:1.3;letter-spacing:-.01em;
+}
+.plaque dd small{display:block;font-weight:400;font-size:.75rem;color:var(--ink-soft);letter-spacing:0}
+.plaque--alert dd{color:var(--brick)}
+
+/* ---------- Sections ---------- */
+.section{padding:3.75rem 0 .5rem;scroll-margin-top:6.5rem}
+.section__head{
+  border-top:2px solid var(--ink);
+  padding-top:.875rem;margin-bottom:1.75rem;
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:.75rem 1rem;
+}
+.section__head h2{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(1.5rem,4vw,2.125rem);letter-spacing:-.02em;
+  margin:0;line-height:1.1;
+}
+.section__head p{
+  margin:0;color:var(--ink-soft);font-size:.9375rem;flex:1 1 14rem;min-width:0;
+}
+
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+.grid--wide{grid-template-columns:1fr}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--rule);
+  padding:1.375rem 1.5rem 1.5rem;
+}
+.card h3{
+  font-family:var(--display);font-weight:600;font-size:1.125rem;
+  letter-spacing:-.01em;margin:0 0 .625rem;
+}
+.card h4{
+  font-family:var(--display);font-weight:600;font-size:.8125rem;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--petrol);
+  margin:1.25rem 0 .375rem;
+}
+.card h4:first-of-type{margin-top:0}
+.card p{margin:0 0 .75rem}
+.card p:last-child{margin-bottom:0}
+.card ul{margin:0;padding-left:1.1rem}
+.card ul li{margin-bottom:.4rem}
+.card ul li:last-child{margin-bottom:0}
+.card--span{grid-column:1/-1}
+.card--flag{border-left:4px solid var(--petrol)}
+.card--alert{border-left:4px solid var(--brick);background:#FBF5F2}
+
+.lede{font-size:1.1875rem;line-height:1.6}
+.muted{color:var(--ink-soft);font-size:.9375rem}
+.note{
+  background:var(--petrol-pale);
+  border:1px solid #C6D8D2;
+  padding:.875rem 1rem;
+  font-size:.9375rem;
+  margin-top:1rem;
+}
+.note strong{font-family:var(--display);font-weight:600}
+.maplink{
+  font-family:var(--display);font-weight:500;font-size:.8125rem;
+  letter-spacing:.02em;display:inline-block;margin-top:.25rem;
+}
+.tel{font-family:var(--display);font-weight:600;font-size:1.375rem;letter-spacing:-.01em;color:var(--petrol);text-decoration:none;display:inline-block}
+.tel:hover{text-decoration:underline}
+.big112{font-family:var(--display);font-weight:700;font-size:3.5rem;line-height:1;color:var(--brick);letter-spacing:-.03em;display:inline-block;text-decoration:none}
+.big112:hover{text-decoration:underline}
+
+.rules{list-style:none;margin:0;padding:0;display:grid;gap:1.125rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.rules li{padding-left:1.75rem;position:relative}
+.rules li::before{
+  content:"";position:absolute;left:0;top:.55em;
+  width:.6rem;height:.6rem;background:var(--mustard);
+}
+.rules h3{margin-bottom:.25rem}
+
+.qr{display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;margin-top:1rem}
+.qr img{width:7rem;height:7rem;border:1px solid var(--rule);background:#fff;padding:.375rem}
+.qr p{margin:0;font-size:.875rem;color:var(--ink-soft);max-width:16rem}
+
+.history-figure{margin:0 0 1.25rem;border:1px solid var(--rule)}
+.history-figure img{width:100%;height:16rem;object-fit:cover}
+
+.footer{
+  margin-top:4rem;border-top:1px solid var(--rule);
+  padding:2rem 0 3rem;text-align:center;color:var(--ink-soft);
+}
+.footer p{margin:0 0 .375rem;font-family:var(--display);font-size:.9375rem}
+.footer .footer__small{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+
+/* Google Translate cleanup */
+.goog-te-banner-frame,iframe.skiptranslate{display:none!important}
+body{top:0!important}
+#google_translate_element select{
+  font-family:var(--display);font-size:.75rem;
+  border:1px solid var(--rule);background:var(--card);color:var(--ink);
+  padding:.25rem;max-width:8.5rem;
+}
+.goog-logo-link,.goog-te-gadget span{display:none!important}
+.goog-te-gadget{font-size:0!important;line-height:0!important}
+
+/* Reveal on scroll — only active when JS runs, so content never hides */
+.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.js .reveal.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+@media (max-width:640px){
+  .hero__img{height:44vh}
+  .hero__plate{margin-top:-3.5rem;padding:1.5rem 1.25rem}
+  .section{padding-top:2.75rem}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap masthead__bar">
+    <a class="wordmark" href="#top">Mellanvågsgatan 5<span>Guest guide</span></a>
+    <div class="masthead__right">
+      <span class="translate-note">Translate</span>
+      <div id="google_translate_element"></div>
+    </div>
+  </div>
+  <nav class="sitenav" aria-label="Sections">
+    <ul>
+      <li><a href="#house">The house</a></li>
+      <li><a href="#rules">House rules</a></li>
+      <li><a href="#transport">Getting around</a></li>
+      <li><a href="#shopping">Shopping</a></li>
+      <li><a href="#favourites">Local favourites</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#emergency">Emergency</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <img class="hero__img" src="images/hero-living-room-real.jpg" alt="The living room of the house" />
+    <div class="wrap">
+      <div class="hero__plate">
+        <p class="hero__eyebrow">Järnbrott, Gothenburg &middot; Built 1952</p>
+        <h1>Welcome to our home</h1>
+        <p>We hope you have a wonderful and relaxing stay. Everything you need to know about the house is on this page.</p>
+      </div>
+
+      <dl class="plaques">
+        <div class="plaque">
+          <dt>Address</dt>
+          <dd>Mellanvågsgatan 5<small>421 33 Västra Frölunda</small></dd>
+        </div>
+        <div class="plaque">
+          <dt>Check-in</dt>
+          <dd>15:00</dd>
+        </div>
+        <div class="plaque">
+          <dt>Check-out</dt>
+          <dd>11:00<small>Unless agreed otherwise</small></dd>
+        </div>
+        <div class="plaque">
+          <dt>Wi-Fi</dt>
+          <dd>On arrival<small>Password given at check-in</small></dd>
+        </div>
+        <div class="plaque plaque--alert">
+          <dt>Emergency</dt>
+          <dd>112<small>Police, fire, ambulance</small></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ THE HOUSE ============ -->
+  <section class="section" id="house">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>The house</h2>
+        <p>Make yourself at home. These are the practical details that help you settle in quickly.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card card--span card--flag reveal">
+          <p class="lede">This is a private family home, not a hotel — so a few things work a little differently. If you need anything that isn't covered here, just get in touch and we'll sort it out.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Wi-Fi</h3>
+          <p>High-speed internet is available throughout the property.</p>
+          <p>The password is given to you on arrival.</p>
+          <div class="note">You can also scan the QR code on the router, which sits in the living room window.</div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Access &amp; keys</h3>
+          <p>The front door has a keypad. Use the code from your check-in message.</p>
+          <h4>Opening the door</h4>
+          <p class="muted">Turn the lock softly to the left and let go. You will hear a sound and see a green light, and can then open the door. Please don't use force.</p>
+        </article>
+
+        <article class="card card--span reveal">
+          <h3>Kitchen &amp; appliances</h3>
+          <p class="muted">The kitchen has most common utensils. Please use what you need and leave it as you found it.</p>
+          <div class="grid">
+            <div>
+              <h4>Rivelia coffee machine</h4>
+              <ul class="muted">
+                <li><strong>Water:</strong> lift the white plastic lid on the side and fill with cold water.</li>
+                <li><strong>Drip tray:</strong> if it's full, pull it out and empty it.</li>
+                <li><strong>Beans:</strong> the machine uses whole beans, already filled.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Dishwasher</h4>
+              <p class="muted">Tabs are under the sink. Please run a cycle before you check out if you can.</p>
+              <h4>Laundry room</h4>
+              <p class="muted">The washing machine is in the basement.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Heating &amp; utilities</h3>
+          <h4>Heating</h4>
+          <p class="muted">The house runs on district heating (fjärrvärme). It's automatic, so there are no thermostats to adjust.</p>
+          <h4>Fuse box</h4>
+          <p class="muted">In the basement room under the stairs.</p>
+          <h4>Cleaning equipment</h4>
+          <p class="muted">Also under the stairs in the basement.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Trash &amp; recycling</h3>
+          <ul>
+            <li><strong>Indoors:</strong> sort paper, plastic, metal and glass into the white box under the coffee machine.</li>
+            <li><strong>Outdoors:</strong> two bins stand by the plot boundary.</li>
+            <li><strong>Collection:</strong> Fridays. Compost every week, the other bin every second week.</li>
+          </ul>
+        </article>
+
+        <article class="card card--span reveal">
+          <h3>Bathroom</h3>
+          <p>This is a 1950s house, and the plumbing has the charm to match.</p>
+          <ul>
+            <li><strong>Flush twice</strong> when needed, so everything clears the pipes.</li>
+            <li><strong>Toilet paper only</strong> — no wipes or anything else.</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOUSE RULES ============ -->
+  <section class="section" id="rules">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>House rules</h2>
+        <p>A few simple things that keep the house comfortable for everyone who stays here.</p>
+      </div>
+
+      <article class="card card--flag reveal">
+        <ul class="rules">
+          <li>
+            <h3>No shoes inside</h3>
+            <p class="muted">Please take off your outdoor shoes when you come in, to keep the floors clean and unscratched.</p>
+          </li>
+          <li>
+            <h3>No smoking</h3>
+            <p class="muted">Smoking is not allowed inside. Please smoke outdoors and dispose of butts properly.</p>
+          </li>
+          <li>
+            <h3>No pets</h3>
+            <p class="muted">We love animals, but we keep the house pet-free for guests with allergies.</p>
+          </li>
+          <li>
+            <h3>Leave it as you found it</h3>
+            <p class="muted">Please treat our home with care and leave it as you'd like to find it.</p>
+          </li>
+          <li>
+            <h3>No parties or events</h3>
+            <p class="muted">Parties and large gatherings aren't allowed, so the neighbourhood stays quiet.</p>
+          </li>
+        </ul>
+      </article>
+
+      <div class="grid" style="margin-top:1.25rem">
+        <article class="card card--span reveal">
+          <h3>If something breaks</h3>
+          <p class="muted">Accidents happen, and you don't need to worry about it.</p>
+          <div class="note"><strong>Call Patrick straight away</strong> so we can talk it through and find a reasonable solution together.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRANSPORT ============ -->
+  <section class="section" id="transport">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Getting around</h2>
+        <p>By public transport or by car — here's how to reach the city and the coast.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card card--span reveal">
+          <h3>Public transport (Västtrafik)</h3>
+          <p>Download the <strong>Västtrafik To Go</strong> app to buy tickets and plan journeys. It's the easiest way to get around Gothenburg.</p>
+          <p><a href="https://www.vasttrafik.se/en/" target="_blank" rel="noopener noreferrer">Västtrafik website &rarr;</a></p>
+          <div class="qr">
+            <img src="images/qr-vasttrafik.png" alt="QR code linking to the Västtrafik To Go app" />
+            <p>Scan to download the app. Your ticket is also valid on the ferries out to the archipelago islands.</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Into the city</h3>
+          <ul>
+            <li><strong>Stop:</strong> Sändaregatan, a 300 m walk.<br />
+              <a class="maplink" href="https://maps.app.goo.gl/JzbEeLwPRRCmd3yM8" target="_blank" rel="noopener noreferrer">Route to the bus stop &rarr;</a></li>
+            <li><strong>Route:</strong> take bus <strong>84</strong> or <strong>95</strong> to <strong>Marklandsgatan</strong>, then a tram into the centre.</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>Parking</h3>
+          <p>Free parking on the driveway for one car.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHOPPING ============ -->
+  <section class="section" id="shopping">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Shopping &amp; groceries</h2>
+        <p>From everyday essentials to the big shopping centre next door.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card reveal">
+          <h3>ICA Kvantum</h3>
+          <p class="muted">A full supermarket right by Frölunda Church. Best for a proper grocery run.</p>
+          <a class="maplink" href="https://maps.app.goo.gl/X2nh86KrJaxjGMic7" target="_blank" rel="noopener noreferrer">View on map &rarr;</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Lidl</h3>
+          <p class="muted">Discount supermarket nearby. Best for essentials at good prices.</p>
+          <a class="maplink" href="https://maps.app.goo.gl/5H7Ee4Guh3yhCF3D9" target="_blank" rel="noopener noreferrer">View on map &rarr;</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Frölunda Torg</h3>
+          <p class="muted">A large shopping centre with fashion, pharmacies, grocery stores and much more.</p>
+          <a class="maplink" href="https://maps.app.goo.gl/eER8qLt5xNaapDS66" target="_blank" rel="noopener noreferrer">View on map &rarr;</a>
+        </article>
+
+        <article class="card card--span card--flag reveal">
+          <h3>Buying alcohol (Systembolaget)</h3>
+          <p>In Sweden, alcohol above 3.5% is sold only in the state-run shops called Systembolaget. There is one at Frölunda Torg.</p>
+          <p class="muted">You must be 20 to buy alcohol at Systembolaget. The legal age to drink at bars and restaurants is 18.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCAL FAVOURITES ============ -->
+  <section class="section" id="favourites">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Local favourites</h2>
+        <p>Our own recommendations for the neighbourhood and the city.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card reveal">
+          <h3>Gigi's Restaurang</h3>
+          <p class="muted">At Radiotorget, a 10 minute walk. Simple, proper food — especially the pizzas.</p>
+          <a class="maplink" href="https://maps.app.goo.gl/4ehB9thzrypbDhus9" target="_blank" rel="noopener noreferrer">View on map &rarr;</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Eating at Frölunda Torg</h3>
+          <p class="muted">The shopping centre has sushi, an Asian buffet, a sports bar, a burger place and a Turkish grill.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>What's on in Gothenburg</h3>
+          <p class="muted">Concerts, sport and culture during your stay.</p>
+          <a class="maplink" href="https://gotevent.se/en/events/" target="_blank" rel="noopener noreferrer">Event calendar &rarr;</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Slottsskogen</h3>
+          <p class="muted">The city's largest park, with walking paths, barbecue areas and enclosures where you can see moose and seals.</p>
+          <a class="maplink" href="https://maps.app.goo.gl/7gc6yfueLY5juHRk6" target="_blank" rel="noopener noreferrer">View on map &rarr;</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Botaniska Trädgården</h3>
+          <p class="muted">The botanical garden — a beautiful stop if you like flowers and green spaces.</p>
+          <a class="maplink" href="https://maps.app.goo.gl/NtGn83EorEozzcf37" target="_blank" rel="noopener noreferrer">View on map &rarr;</a>
+        </article>
+
+        <article class="card card--flag reveal">
+          <h3>Our walking tip</h3>
+          <p class="muted">Take the bus from Sändaregatan to Synhållsgatan, walk to the Botanical Garden from there, then carry on into Slottsskogen right next door.</p>
+          <a class="maplink" href="https://maps.app.goo.gl/Cpn3Snc4H99qkqei6" target="_blank" rel="noopener noreferrer">View the walking route &rarr;</a>
+        </article>
+
+        <article class="card card--span reveal">
+          <h3>Swimming &amp; beaches</h3>
+          <div class="grid">
+            <div>
+              <h4>Åbybadet</h4>
+              <p class="muted">Local indoor pool and adventure bath.<br />
+                <a class="maplink" href="https://maps.app.goo.gl/TW5FbpSUqsZGxLMj7" target="_blank" rel="noopener noreferrer">View on map &rarr;</a></p>
+              <h4>Askimsbadet</h4>
+              <p class="muted">Outdoor beach with shallow water, best for families with small children. Can get busy.<br />
+                <a class="maplink" href="https://maps.app.goo.gl/QuUivj44rdNeFnvh6" target="_blank" rel="noopener noreferrer">View on map &rarr;</a></p>
+            </div>
+            <div>
+              <h4>Näset</h4>
+              <p class="muted">Popular beach in a beautiful setting, good for families and teenagers.<br />
+                <a class="maplink" href="https://maps.app.goo.gl/V9QB4FnzvmzEqzwTA" target="_blank" rel="noopener noreferrer">View on map &rarr;</a></p>
+              <h4>Smithska Udden</h4>
+              <p class="muted">Classic Gothenburg cliff swimming, very beautiful, with a small beach for young children.<br />
+                <a class="maplink" href="https://maps.app.goo.gl/u44ykt6yo6egxujS9" target="_blank" rel="noopener noreferrer">View on map &rarr;</a></p>
+            </div>
+            <div>
+              <h4>Sisjön</h4>
+              <p class="muted">The closest lake swimming to the house, in a beautiful natural setting.<br />
+                <a class="maplink" href="https://maps.app.goo.gl/qVVUnL7FHrUQNBGy9" target="_blank" rel="noopener noreferrer">View on map &rarr;</a></p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HISTORY ============ -->
+  <section class="section" id="history">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>History of the house</h2>
+        <p>A glimpse into the past of Järnbrott and the "own home" movement.</p>
+      </div>
+
+      <figure class="history-figure reveal">
+        <img src="images/history-hero.png" alt="Historical view of Järnbrott" />
+      </figure>
+
+      <div class="grid grid--wide">
+        <article class="card reveal">
+          <h3>The "own home" movement (Egnahemsrörelsen)</h3>
+          <p>The movement emerged in Sweden around 1900, as a response to the rapid urbanisation, overcrowding and social divides that came with industrialisation. The state, the municipalities and employers began to see the private house with a garden as a way to improve living conditions for workers and lower-level civil servants.</p>
+          <p>Through favourable loans, affordable land and standardised house types, many more people could own their home. The idea was never only about housing — it was also about independence, responsibility and stable family life.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Järnbrott &amp; this house</h3>
+          <p>In Gothenburg, "own home" construction took off during the interwar years and continued after the Second World War. Järnbrott is a clear example: building started here in the 1930s and carried on into the 1950s.</p>
+          <p><strong>The house you are staying in was built in 1952</strong>, along with all the similar houses around it. There were three house types to choose from. Families were allocated a plot, then decided how much help they wanted from local carpentry firms and how much they would build themselves.</p>
+          <p>Most of the houses here were largely built by the very people who bought the plots and went on to live in them.</p>
+          <div class="note">A picture of the house in its original state hangs above the freezer in the basement.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EMERGENCY ============ -->
+  <section class="section" id="emergency">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Emergency &amp; contacts</h2>
+        <p>Important numbers. Worth keeping this page open on your phone.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card card--alert card--span reveal">
+          <h3>Emergency services — police, fire, ambulance</h3>
+          <p><a class="big112" href="tel:112">112</a></p>
+          <p class="muted">Give this address: <strong>Mellanvågsgatan 5, 421 33 Västra Frölunda, Gothenburg.</strong></p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Patrick Gruczkun — your host</h3>
+          <p><a class="tel" href="tel:+46736858741">+46 73 685 87 41</a></p>
+          <p class="muted">For questions and anything urgent about the house.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Nils — neighbour</h3>
+          <p><a class="tel" href="tel:+46734030241">+46 73 403 02 41</a></p>
+          <p class="muted">If you can't reach Patrick.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Wishing you a wonderful stay.</p>
+    <p class="footer__small">Mellanvågsgatan 5 &middot; Järnbrott &middot; Gothenburg</p>
+  </div>
+</footer>
+
+<script>
+// Google Translate — keeps the page usable for guests in any language
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({
+    pageLanguage:'en',
+    includedLanguages:'en,sv,de,fr,es,ar,pl,no,da,zh-CN',
+    layout:google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay:false
+  },'google_translate_element');
+}
+(function(){
+  var s=document.createElement('script');
+  s.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  s.async=true;
+  document.body.appendChild(s);
+  // Google Translate pushes the body down; keep it in place
+  new MutationObserver(function(){
+    if(document.body.style.top && document.body.style.top!=='0px'){document.body.style.top='0px';}
+  }).observe(document.body,{attributes:true,attributeFilter:['style']});
+})();
+
+// Highlight the section you're reading in the nav
+(function(){
+  var links=Array.prototype.slice.call(document.querySelectorAll('.sitenav a'));
+  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  var spy=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var i=sections.indexOf(e.target);
+      links.forEach(function(l,n){l.classList.toggle('is-active',n===i);});
+    });
+  },{rootMargin:'-30% 0px -60% 0px'});
+  sections.forEach(function(s){if(s) spy.observe(s);});
+})();
+
+// Gentle reveal on scroll
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if(!('IntersectionObserver' in window)) return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target);}
+    });
+  },{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+
+</body>
+</html>
